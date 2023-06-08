@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/str_delaytimer"
+            android:onClick="onRadioClicked"/>
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/str_click"
+            android:onClick="onRadioClicked"/>
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/strswipe"
+            android:onClick="onRadioClicked"/>
+       </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_touch"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/clickpos"
+        android:onClick="onTouchIconClicked"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_fixedDelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delay_fixed" />
+
+            <Button
+            android:id="@+id/button_reducetimer"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:textSize="20dp"
+            android:onClick="addOrReduce"
+            android:longClickable="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/minusselector" />
+
+
+        <TextView
+            android:id="@+id/text_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="15" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:text="@string/str_s" />
+
+        <Button
+            android:id="@+id/button_addtimer"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="addOrReduce"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/plusselector" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_randomDelay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delay_random" />
+
+            <Spinner
+                android:id="@+id/spinner_start"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:entries="@array/timerlist"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rand_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 30 seconds"
+                android:onClick="onClickRandStart"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_to" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rand_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 30 seconds"
+                android:onClick="onClickRandEnd"/>
+            <Spinner
+                android:id="@+id/spinner_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/timerlist"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_where" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text_clickx"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="300" />
+
+
+
+            <TextView
+                android:id="@+id/text_clicky"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="500" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_from" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text_x1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="300" />
+
+
+
+            <TextView
+                android:id="@+id/text_y1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="600" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_to"
+            tools:ignore="HardcodedText" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text_x2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="300" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_y2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:text="400" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

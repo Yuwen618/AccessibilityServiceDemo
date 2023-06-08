@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/mainlogo"
+>
+
+    <Button
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mainmenu"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/autoclick"
+        android:layout_marginLeft="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/playicon"
+        android:visibility="visible" />
+<!--
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btnshowbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/customclick"
+        android:visibility="visible" />
+-->
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btnconfig"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/configicon"
+        android:visibility="visible" />
+
+
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btninfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/infoicon"
+        android:visibility="visible" />
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btnquit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/exiticon"
+        android:visibility="visible" />
+
+</LinearLayout>

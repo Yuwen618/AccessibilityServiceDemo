@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timerlist">
+                <item>@string/onesecond</item>
+                <item>@string/thirtysecond</item>
+                <item>@string/oneminute</item>
+                <item>@string/twominute</item>
+                <item>@string/fiveminute</item>
+                <item>@string/tenminute</item>
+    </string-array>  
+
+</resources>

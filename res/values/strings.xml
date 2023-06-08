@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BelyAssist</string>
+    <string name="str_ok">OK</string>
+    <string name="str_cancel">Cancel</string>
+
+    <string name="str_close">Close</string>
+
+    <string name="confirmDelete">Delete?</string>
+
+    <string name="inputname">Input name</string>
+    <string name="nullnotallowed">Cannot be null!</string>
+    <string name="str_new">New</string>
+    <string name="str_newaction">New action</string>
+    <string name="str_edit">Edit action</string>
+    <string name="str_addfirst">Please add first</string>
+    <string name="str_itemdeleted">Item deleted.</string>
+    <string name="str_noconfigbutton">No button configed, please config button first!</string>
+
+
+    <string name="str_grantoverlay">Please grant overlay permission first.</string>
+    <string name="str_grantaccessisbility">Please enable accessibility service for App first.</string>
+    <string name="str_noconfiguration">No configuration, please setup first.</string>
+    <string name="str_autoclick_started">Auto click started.</string>
+    <string name="str_autoclick_stopped">Auto click stopped.</string>
+    <string name="str_repeatone">Repeat : Once</string>
+    <string name="str_repeatalways">Repeat : Always</string>
+
+    <string name="str_clickat">Click @ (</string>
+    <string name="str_delaytime">Delay \t</string>
+    <string name="str_second">\t seconds</string>
+    <string name="str_swipe">Swipe from \t(</string>
+    <string name="str_swipeto">)\t to \t(</string>
+
+
+    <string name="str_delaytimer">DelayTimer</string>
+    <string name="str_click">Click</string>
+    <string name="strswipe">Swipe</string>
+    <string name="str_s">s</string>
+    <string name="str_where">Where</string>
+    <string name="str_from">From</string>
+    <string name="str_to">\t To \t</string>
+    <string name="str_button_configurations">Button Configurations</string>
+    <string name="str_deletestr">Delete</string>
+    <string name="str_addstr">Add</string>
+    <string name="str_applystr">Apply</string>
+    <string name="str_i_got_it">Continue</string>
+    <string name="str_configurations">Configurations</string>
+    <string name="str_actions">Actions</string>
+    <string name="str_buttons">Buttons</string>
+    <string name="str_add_button">Add button</string>
+    <string name="str_add_action">Add action</string>
+    <string name="delay_fixed">Fixed</string>
+    <string name="delay_random">Random btw \t</string>
+
+    <string name="onesecond">1 second</string>
+    <string name="thirtysecond">30 seconds</string>
+    <string name="oneminute">1 minute</string>
+    <string name="twominute">2 minutes</string>
+    <string name="fiveminute">5 minutes</string>
+    <string name="tenminute">10 minutes</string>
+    <string name="needtimer">Not saved, continuous actions need timer to avoid freezing!</string>
+    <string name="second_time_bigger">2nd time should be bigger.</string>
+    <string name="stop_action_first">Please stop action first.</string>
+    <string name="selectmintimer">Scroll to set min timer</string>
+    <string name="selectmaxtimer">Scroll to set max timer</string>
+</resources>
